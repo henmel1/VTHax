@@ -6,7 +6,7 @@
     }
     .image-overlay {
         position: absolute; /* Absolute position within the navbar container */
-        top: 75%; /* Vertically center the image */
+        top: 120%; /* Vertically center the image */
         left: 50%; /* Horizontally center the image */
         transform: translate(-50%, -50%); /* Center the image precisely */
         z-index: 2; /* Place it above the navbar */
@@ -27,7 +27,7 @@
             </li>
           </ul>
         </div>
-        <img class="image-overlay" src="{{ url_for('static', filename='Miru_Logo.png') }}" alt="Miru" width="100" height="100">
+        <img class="image-overlay" src="{{ url_for('static', filename='Miru_Logo.png') }}" alt="Miru" width="130" height="130">
       </nav>
 
 <body>
@@ -43,28 +43,29 @@
         }
     </style>
 
-    <table class="table table-striped table-bordered" table-layout:fixed>
-        <thead>
-            <tr>
-                {% for header in headers %}
-                    <th>{{header}}</th>
-                {% endfor %}
-            </tr>
-        </thead>
-
-        <tbody>
-            <form method="POST" action="/delete">
-            {% for row in tableData %}
+    <form method="POST" action="/delete">
+        <table class="table table-striped table-bordered" style="table-layout: fixed;">
+            <thead>
                 <tr>
-                    <td><input type="checkbox" value="{{row.id}}" name="row_checkboxes"/></td>
-                    <td>{{row['Name']}}</td>
-                    <td>{{row['Link']}}</td>
+                    {% for header in headers %}
+                        <th>{{ header }}</th>
+                    {% endfor %}
                 </tr>
-            {% endfor %}
-            <button name="custom" class="btn btn-primary" type="submit" value="custom" onclick="">Delete</button>
-            </form>
-        </tbody>
-    </table>
+            </thead>
+    
+            <tbody>
+                {% for row in tableData %}
+                    <tr>
+                        <td><input type="checkbox" value="{{ row.id }}" name="row_checkboxes" /></td>
+                        <td>{{ row['Name'] }}</td>
+                        <td>{{ row['Link'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    
+        <button name="custom" class="btn btn-primary" type="submit" value="custom">Delete</button>
+    </form>
     
 </div>
 

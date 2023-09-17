@@ -89,8 +89,11 @@ def run():
     global res_table
     for d in tableData:
         for r in dorkSearch(d['Link']):
-            r['Name'] = d['Name']
-            res_table.append(r)
+            try:
+                r['Name'] = d['Name']
+                res_table.append(r)
+            except:
+                res_table.append(r)
 
     return render_template(
         'run.html',
@@ -107,6 +110,14 @@ def save():
         for r in res_table:
             writer.writerow(r.values())  
             
+    return render_template(
+        'run.html',
+        headers=['Name', 'Link', 'IP', 'Decription'],
+        tableData=res_table
+    )
+
+@app.route('/map', methods=('GET', 'POST'))
+def map():
     return render_template(
         'run.html',
         headers=['Name', 'Link', 'IP', 'Decription'],

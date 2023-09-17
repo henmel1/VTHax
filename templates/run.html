@@ -1,27 +1,43 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/results">Results</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <img src="{{ url_for('static', filename='Miru_Logo.png') }}" alt="Miru" width="100" height="100">
+<style>
+    .navbar {
+        z-index: 1;
+    }
+    .image-overlay {
+        position: absolute; /* Absolute position within the navbar container */
+        top: 120%; /* Vertically center the image */
+        left: 50%; /* Horizontally center the image */
+        transform: translate(-50%, -50%); /* Center the image precisely */
+        z-index: 2; /* Place it above the navbar */
+    }
+
+</style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/results">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+        <img class="image-overlay" src="{{ url_for('static', filename='Miru_Logo.png') }}" alt="Miru" width="130" height="130">
+      </nav>
 
 <h1>Results:</h1>
 <body>
 <div class="px-5 mx-5">
     <form method="post" action="/save">
         <button name="preset" class="btn btn-success" type="submit" value="preset" onclick="">Save</button>
+    </form>
+    <form method="post" action="/map">
+        <button name="preset" class="btn btn-danger" type="submit" value="preset" onclick="">Map Visual</button>
     </form>
     <style>
         table {
