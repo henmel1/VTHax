@@ -1,290 +1,96 @@
-{'asn': '1942',
- 'asn_cidr': '129.88.0.0/16',
- 'asn_country_code': 'FR',
- 'asn_date': '1987-10-15',
- 'asn_description': 'FR-TIGRE Toile Informatique GREnobloise, EU',
- 'asn_registry': 'ripencc',
- 'entities': ['GPRT405-RIPE',
-              'ORG-CUGA2-RIPE',
-              'RENATER-MNT',
-              'RIPE-NCC-LEGACY-MNT',
-              'CA7379-RIPE'],
- 'network': {'cidr': '129.88.0.0/16',
-             'country': 'FR',
-             'end_address': '129.88.255.255',
+{'asn': '7004',
+ 'asn_cidr': '200.54.110.0/24',
+ 'asn_country_code': 'CL',
+ 'asn_date': '1999-11-09',
+ 'asn_description': 'CTC Transmisiones Regionales S.A., CL',
+ 'asn_registry': 'lacnic',
+ 'entities': ['CL-CLTE-LACNIC', 'ALS17'],
+ 'network': {'cidr': '200.54.110.0/24',
+             'country': None,
+             'end_address': '200.54.110.255',
              'events': [{'action': 'registration',
                          'actor': None,
-                         'timestamp': '2002-04-12T15:17:41Z'},
+                         'timestamp': '2007-06-28T12:00:00Z'},
                         {'action': 'last changed',
                          'actor': None,
-                         'timestamp': '2023-09-04T07:46:16Z'}],
-             'handle': '129.88.0.0 - 129.88.255.255',
+                         'timestamp': '2007-06-28T12:00:00Z'}],
+             'handle': '200.54.110.0/24',
              'ip_version': 'v4',
-             'links': ['https://rdap.db.ripe.net/ip/129.88.175.2',
-                       'http://www.ripe.net/data-tools/support/documentation/terms'],
-             'name': 'FR-U-GRENOBLE-ALPES',
-             'notices': [{'description': 'This output has been filtered.',
-                          'links': None,
-                          'title': 'Filtered'},
-                         {'description': 'If you see inaccuracies in the '
-                                         'results, please visit:',
-                          'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                          'title': 'Whois Inaccuracy Reporting'},
-                         {'description': 'Objects returned came from source\n'
-                                         'RIPE',
-                          'links': None,
-                          'title': 'Source'},
-                         {'description': 'This is the RIPE Database query '
-                                         'service. The objects are in RDAP '
-                                         'format.',
-                          'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
+             'links': ['https://rdap.lacnic.net/rdap/ip/200.54.110.0/24',
+                       'https://rdap.lacnic.net/rdap/ip/200.54.0.0/16'],
+             'name': None,
+             'notices': [{'description': 'This is the LACNIC RDAP service. '
+                                         'Objects are in RDAP format.',
+                          'links': ['http://www.lacnic.net/web/lacnic/registration-data-access-protocol'],
                           'title': 'Terms and Conditions'}],
-             'parent_handle': '0.0.0.0 - 255.255.255.255',
+             'parent_handle': '200.54.0.0/16',
              'raw': None,
-             'remarks': [{'description': 'Universite Grenoble Alpes',
+             'remarks': [{'description': '',
                           'links': None,
-                          'title': None}],
-             'start_address': '129.88.0.0',
-             'status': ['active'],
-             'type': 'LEGACY'},
+                          'title': 'remarks'}],
+             'start_address': '200.54.110.0',
+             'status': None,
+             'type': 'reallocated'},
  'nir': None,
- 'objects': {'CA7379-RIPE': {'contact': {'address': [{'type': None,
-                                                      'value': 'Maison Jean '
-                                                               'Kuntzmann\n'
-                                                               '110 Rue de la '
-                                                               'Chimie\n'
-                                                               '38400 Saint '
-                                                               'Martin '
-                                                               "d'Heres"}],
-                                         'email': [{'type': 'email',
-                                                    'value': 'dnsadmin@univ-grenoble-alpes.fr'},
-                                                   {'type': 'abuse',
-                                                    'value': 'abuse@univ-grenoble-alpes.fr'}],
-                                         'kind': 'group',
-                                         'name': 'COMUE-GRENOBLE-ALPES',
-                                         'phone': None,
-                                         'role': None,
-                                         'title': None},
-                             'entities': ['GPRT405-RIPE', 'RENATER-MNT'],
-                             'events': None,
-                             'events_actor': None,
-                             'handle': 'CA7379-RIPE',
-                             'links': None,
-                             'notices': None,
-                             'raw': None,
-                             'remarks': None,
-                             'roles': ['abuse'],
-                             'status': None},
-             'GPRT405-RIPE': {'contact': {'address': [{'type': None,
-                                                       'value': 'FRANCE'}],
-                                          'email': [{'type': 'email',
-                                                     'value': 'registre_ripe-gprt405@listes.renater.fr'}],
-                                          'kind': 'group',
-                                          'name': 'COMUE-GRENOBLE-ALPES',
-                                          'phone': None,
-                                          'role': None,
-                                          'title': None},
-                              'entities': ['RENATER-MNT'],
-                              'events': [{'action': 'registration',
-                                          'actor': None,
-                                          'timestamp': '2023-03-27T11:24:08Z'},
-                                         {'action': 'last changed',
-                                          'actor': None,
-                                          'timestamp': '2023-08-24T06:27:13Z'}],
-                              'events_actor': None,
-                              'handle': 'GPRT405-RIPE',
-                              'links': ['https://rdap.db.ripe.net/entity/GPRT405-RIPE',
-                                        'http://www.ripe.net/data-tools/support/documentation/terms'],
-                              'notices': [{'description': 'This output has '
-                                                          'been filtered.',
-                                           'links': None,
-                                           'title': 'Filtered'},
-                                          {'description': 'If you see '
-                                                          'inaccuracies in the '
-                                                          'results, please '
-                                                          'visit:',
-                                           'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                           'title': 'Whois Inaccuracy '
-                                                    'Reporting'},
-                                          {'description': 'Objects returned '
-                                                          'came from source\n'
-                                                          'RIPE',
-                                           'links': None,
-                                           'title': 'Source'},
-                                          {'description': 'This is the RIPE '
-                                                          'Database query '
-                                                          'service. The '
-                                                          'objects are in RDAP '
-                                                          'format.',
-                                           'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                           'title': 'Terms and Conditions'}],
-                              'raw': None,
-                              'remarks': None,
-                              'roles': None,
-                              'status': None},
-             'ORG-CUGA2-RIPE': {'contact': {'address': [{'type': None,
-                                                         'value': 'Maison Jean '
-                                                                  'Kuntzmann\n'
-                                                                  '110 Rue de '
-                                                                  'la Chimie\n'
-                                                                  '38400 Saint '
-                                                                  'Martin '
-                                                                  "d'Heres"}],
-                                            'email': [{'type': 'email',
-                                                       'value': 'dnsadmin@univ-grenoble-alpes.fr'}],
+ 'objects': {'ALS17': {'contact': {'address': [{'type': None,
+                                                'value': 'Piso 10\n'
+                                                         'Providencia\n'
+                                                         'Santiago\n'
+                                                         '\n'
+                                                         '7500775\n'
+                                                         'CL'}],
+                                   'email': [{'type': None,
+                                              'value': 'technical.tie@gmail.com'}],
+                                   'kind': 'individual',
+                                   'name': 'Technical Contact',
+                                   'phone': [{'type': 'voice',
+                                              'value': '56 22 7701512'}],
+                                   'role': None,
+                                   'title': None},
+                       'entities': None,
+                       'events': [{'action': 'registration',
+                                   'actor': None,
+                                   'timestamp': '2006-08-04T12:00:00Z'},
+                                  {'action': 'last changed',
+                                   'actor': None,
+                                   'timestamp': '2022-03-18T12:33:02Z'}],
+                       'events_actor': None,
+                       'handle': 'ALS17',
+                       'links': ['https://rdap.lacnic.net/rdap/entity/ALS17'],
+                       'notices': None,
+                       'raw': None,
+                       'remarks': None,
+                       'roles': ['administrative', 'technical', 'abuse'],
+                       'status': None},
+             'CL-CLTE-LACNIC': {'contact': {'address': [{'type': None,
+                                                         'value': '11\n'
+                                                                  'Providencia\n'
+                                                                  'Santiago\n'
+                                                                  '\n'
+                                                                  '1\n'
+                                                                  'CL'}],
+                                            'email': None,
                                             'kind': 'org',
-                                            'name': 'Communaute Universite '
-                                                    'Grenoble Alpes',
-                                            'phone': None,
+                                            'name': 'CL-TEEMSR-LACNIC',
+                                            'phone': [{'type': 'voice',
+                                                       'value': '56 2 '
+                                                                '6912678'}],
                                             'role': None,
                                             'title': None},
-                                'entities': ['GPRT405-RIPE', 'RENATER-MNT'],
+                                'entities': None,
                                 'events': [{'action': 'registration',
                                             'actor': None,
-                                            'timestamp': '2018-09-12T09:53:48Z'},
+                                            'timestamp': '2007-06-25T12:00:00Z'},
                                            {'action': 'last changed',
                                             'actor': None,
-                                            'timestamp': '2023-08-30T07:54:00Z'}],
+                                            'timestamp': '2013-03-19T02:18:36Z'}],
                                 'events_actor': None,
-                                'handle': 'ORG-CUGA2-RIPE',
-                                'links': ['https://rdap.db.ripe.net/entity/ORG-CUGA2-RIPE',
-                                          'http://www.ripe.net/data-tools/support/documentation/terms'],
-                                'notices': [{'description': 'This output has '
-                                                            'been filtered.',
-                                             'links': None,
-                                             'title': 'Filtered'},
-                                            {'description': 'If you see '
-                                                            'inaccuracies in '
-                                                            'the results, '
-                                                            'please visit:',
-                                             'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                             'title': 'Whois Inaccuracy '
-                                                      'Reporting'},
-                                            {'description': 'Objects returned '
-                                                            'came from source\n'
-                                                            'RIPE',
-                                             'links': None,
-                                             'title': 'Source'},
-                                            {'description': 'This is the RIPE '
-                                                            'Database query '
-                                                            'service. The '
-                                                            'objects are in '
-                                                            'RDAP format.',
-                                             'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                             'title': 'Terms and Conditions'}],
+                                'handle': 'CL-CLTE-LACNIC',
+                                'links': ['https://rdap.lacnic.net/rdap/entity/CL-CLTE-LACNIC'],
+                                'notices': None,
                                 'raw': None,
-                                'remarks': [{'description': 'Universite '
-                                                            'Grenoble Alpes',
-                                             'links': None,
-                                             'title': None}],
-                                'roles': None,
-                                'status': None},
-             'RENATER-MNT': {'contact': {'address': None,
-                                         'email': None,
-                                         'kind': 'individual',
-                                         'name': 'RENATER-MNT',
-                                         'phone': None,
-                                         'role': None,
-                                         'title': None},
-                             'entities': ['AS1717-MNT', 'GR1378-RIPE'],
-                             'events': [{'action': 'registration',
-                                         'actor': None,
-                                         'timestamp': '2002-04-11T08:41:17Z'},
-                                        {'action': 'last changed',
-                                         'actor': None,
-                                         'timestamp': '2015-08-06T13:22:27Z'}],
-                             'events_actor': None,
-                             'handle': 'RENATER-MNT',
-                             'links': ['https://rdap.db.ripe.net/entity/RENATER-MNT',
-                                       'http://www.ripe.net/data-tools/support/documentation/terms'],
-                             'notices': [{'description': 'This output has been '
-                                                         'filtered.',
-                                          'links': None,
-                                          'title': 'Filtered'},
-                                         {'description': 'If you see '
-                                                         'inaccuracies in the '
-                                                         'results, please '
-                                                         'visit:',
-                                          'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                          'title': 'Whois Inaccuracy '
-                                                   'Reporting'},
-                                         {'description': 'Objects returned '
-                                                         'came from source\n'
-                                                         'RIPE',
-                                          'links': None,
-                                          'title': 'Source'},
-                                         {'description': 'This is the RIPE '
-                                                         'Database query '
-                                                         'service. The objects '
-                                                         'are in RDAP format.',
-                                          'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                          'title': 'Terms and Conditions'}],
-                             'raw': None,
-                             'remarks': [{'description': 'RENATER',
-                                          'links': None,
-                                          'title': None}],
-                             'roles': ['registrant'],
-                             'status': None},
-             'RIPE-NCC-LEGACY-MNT': {'contact': {'address': None,
-                                                 'email': None,
-                                                 'kind': 'individual',
-                                                 'name': 'RIPE-NCC-LEGACY-MNT',
-                                                 'phone': None,
-                                                 'role': None,
-                                                 'title': None},
-                                     'entities': ['CREW-RIPE',
-                                                  'ORG-NCC1-RIPE',
-                                                  'RIPE-NCC-LEGACY-MNT'],
-                                     'events': [{'action': 'registration',
-                                                 'actor': None,
-                                                 'timestamp': '2014-09-18T09:18:32Z'},
-                                                {'action': 'last changed',
-                                                 'actor': None,
-                                                 'timestamp': '2015-07-22T10:09:03Z'}],
-                                     'events_actor': None,
-                                     'handle': 'RIPE-NCC-LEGACY-MNT',
-                                     'links': ['https://rdap.db.ripe.net/entity/RIPE-NCC-LEGACY-MNT',
-                                               'http://www.ripe.net/data-tools/support/documentation/terms'],
-                                     'notices': [{'description': 'This output '
-                                                                 'has been '
-                                                                 'filtered.',
-                                                  'links': None,
-                                                  'title': 'Filtered'},
-                                                 {'description': 'If you see '
-                                                                 'inaccuracies '
-                                                                 'in the '
-                                                                 'results, '
-                                                                 'please '
-                                                                 'visit:',
-                                                  'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                                  'title': 'Whois Inaccuracy '
-                                                           'Reporting'},
-                                                 {'description': 'Objects '
-                                                                 'returned '
-                                                                 'came from '
-                                                                 'source\n'
-                                                                 'RIPE',
-                                                  'links': None,
-                                                  'title': 'Source'},
-                                                 {'description': 'This is the '
-                                                                 'RIPE '
-                                                                 'Database '
-                                                                 'query '
-                                                                 'service. The '
-                                                                 'objects are '
-                                                                 'in RDAP '
-                                                                 'format.',
-                                                  'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                                  'title': 'Terms and '
-                                                           'Conditions'}],
-                                     'raw': None,
-                                     'remarks': [{'description': 'RIPE NCC '
-                                                                 'LEGACY '
-                                                                 'resource '
-                                                                 'maintainer',
-                                                  'links': None,
-                                                  'title': None}],
-                                     'roles': None,
-                                     'status': None}},
- 'query': '129.88.175.2',
+                                'remarks': None,
+                                'roles': ['registrant'],
+                                'status': None}},
+ 'query': '200.54.110.120',
  'raw': None}

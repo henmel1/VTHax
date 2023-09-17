@@ -40,7 +40,7 @@ def dorkSearch(google_dork_search_query):
             except:
                 print("The IP address for " + domain + " could not be found.\n")
     except:
-        return {'Name': "Invalid URL"}
+        return {'Name': "Invalid URL", 'Link': "Invalid URL"}
     return results
 
 # method to get ip address of given url

@@ -1,0 +1,32 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/results">Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <img src="{{ url_for('static', filename='Miru_Logo.png') }}" alt="Miru" width="100" height="100">
+
+<head>
+    <title>What is Miru?</title>
+</head>
+<body>
+    <h1>What is Miru?</h1>
+    <p>Miru is a web-based vulnerability mapping application that identifies misconfigured servers and devices containing sensitive information on the internet. Our project is named Miru (<span style="font-family: 'Arial Unicode MS', sans-serif;">見る</span>, "to look") as it utilizes Google Dork queries to actively find, categorize, and analyze target sites. The frontend of Miru leverages Flask for data representation and analytics, while the backend crawler performs the search functionality, WHOIS requests, regex parsing, and data visualization.</p>
+
+    <h2>Google Dorks Explained</h2>
+    <p>A Google Dork is a string that uses the advanced search features of Google to query sites that follow a set of specified parameters. An example of a Google Dork is: <code>inurl:'adminLogin/' intitle:'Admin Panel.'</code> Here, 'inurl:' searches for 'adminLogin/' in the URL of the search results, while 'intitle:' searches for the words 'Admin Panel' in the titles of websites. Each of these search parameters can be customized in numerous combinations, leading to a wide range of unique results. Some of the preset Google Dorks in Miru include websites that contain password files, surveillance cameras, payroll systems, SSH keys, and many more.</p>
+
+    <h2>Relevance to Cybersecurity</h2>
+    <p>The purpose of Miru is to demonstrate just how many vulnerable web services there are exposed on the open internet, and the concerningly large amount of information that these exposed services are hosting. From login credentials to databases containing user data and financial transactions of e-commerce sites, all types of information can be obtained with fairly unsophisticated Google Dork queries online. Miru can assist system administrators and security professionals in evaluating the vulnerabilities of specific domains and the overall threat landscape of exposed web services throughout the world.</p>
+</body>

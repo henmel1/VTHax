@@ -86,32 +86,45 @@ def presets():
 res_table = []
 @app.route('/run', methods=('GET', 'POST'))
 def run():
-    res_table = []
+    global res_table
     for d in tableData:
         for r in dorkSearch(d['Link']):
             r['Name'] = d['Name']
             res_table.append(r)
-    
-    if request.method == 'POST':
-        current_datetime = str(datetime.now().strftime("%Y-%m-%d %H-%M-%S"))
-        file_name = current_datetime+".csv"
-        csv_file = open(file_name, 'w')
-        writer = csv.writer(csv_file)
-        for r in res_table:
-            writer.writerow(r)
 
     return render_template(
         'run.html',
         headers=['Name', 'Link', 'IP', 'Decription'],
         tableData=res_table
     )
-    
+@app.route('/save', methods=('GET', 'POST'))
+def save():
+    if request.method == 'POST':
+        current_datetime = str(datetime.now().strftime("%Y-%m-%d %H-%M-%S"))
+        file_name = current_datetime+".csv"
+        csv_file = open(file_name, 'w')
+        writer = csv.writer(csv_file)
+        for r in res_table:
+            writer.writerow(r.values())  
+            
+    return render_template(
+        'run.html',
+        headers=['Name', 'Link', 'IP', 'Decription'],
+        tableData=res_table
+    )
+
 @app.route('/results', methods=('GET', 'POST'))
 def results():
     return render_template(
         'run.html',
         headers=['Name', 'Link', 'IP', 'Decription'],
         tableData=res_table
+    )
+    
+@app.route('/about', methods=('GET', 'POST'))
+def about():
+    return render_template(
+        'about.html'
     )
     
 if __name__ == '__main__':
