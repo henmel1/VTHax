@@ -1,0 +1,11 @@
+Name,Link,id
+Admin Portals,https://www.google.com/search?q=inurl%3A%22adminLogin%2F%22+intitle%3A%22Admin+Panel%22,1
+Password Files,https://www.google.com/search?q=intitle%3A%22index+of%22+%22pass.txt%22#ip=1,2
+MySql Database Credentials,https://www.google.com/search?q=%22%27dsn%3A+mysql%3Ahost%3Dlocalhost%3Bdbname%3D%22+ext%3Ayml+%7C+ext%3Atxt+%22password%3A%22%0D%0A&sca_esv=565982062,3
+Surveillence Cameras,https://www.google.com/search?q=intitle%3A%22Network+Camera%22+inurl%3Amain.cgi%0D%0A&sca_esv=565982062#ip=1,4
+SCADA Logins,https://www.google.com/search?q=inurl%3A%22%2Fscada-vis%22#ip=1,5
+Resumes,https://www.google.com/search?q=intitle%3A%22Index+of+%2F%22+inurl%3A%28resume%7Ccv%29,6
+HR Payroll Websites,https://www.google.com/search?q=intext%3A%22index+of%22+%22payroll%22&sca_esv=565986362#ip=1,7
+Brother Printers,https://www.google.com/search?q=inurl%3Amain.html+intitle%3Abrother,8
+SSH Keys,https://www.google.com/search?q=intitle%3A%22index+of%22+%22.ssh%22+OR+%22ssh_config%22+OR+%22ssh_known_hosts%22+OR+%22authorized_keys%22+OR+%22id_rsa%22+OR+%22id_dsa%22,9
+Windows Servers,https://www.google.com/search?q=intitle%3A%22IIS+Windows+Server%22#ip=1,10

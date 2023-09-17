@@ -1,0 +1,82 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/results">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img src="{{ url_for('static', filename='Miru_Logo.png') }}" alt="Miru" width="100" height="100">
+
+{% block title%}Results:{% endblock %}
+
+<body>
+    <div class="buttons">
+        <div class="row justify-content-center">  
+            <div class="col-2">
+                <form method="post" action="#">
+                    <button name="save" class="btn btn-primary" type="submit" value="save" onclick="">Save as CSV</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<div class="px-5 mx-5">
+    <style>
+        table {
+            border-spacing: 0px;
+            table-layout:auto;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #table-scroll {
+            height:150px;
+            overflow:auto;  
+            margin-top:20px;
+        }
+        #table-wrapper table {
+            width:100%;
+        }
+    </style>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                {% for header in headers %}
+                    <th>{{header}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+
+        <tbody white-space: nowrap>
+            <form method="POST" action="/delete">
+            {% for row in tableData %}
+                <div  id="table-wrapper">
+                    <div  id="table-scroll">
+                        <tr>
+                            <td>{{row['Name']}}</td>
+                            <td>{{row['Link']}}</td>
+                            <td>{{row['IP']}}</td>
+                            <td>{{row['Description']}}</td>
+                        </tr>
+                    </div>
+                </div>
+            {% endfor %}
+            </form>
+        </tbody>
+    </table>
+    
+</div>
+
+</body>

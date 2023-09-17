@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block title%}Select Preset Dorks{% endblock %}
+
+{% block content %}
+<div>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            {% for header in headers %}
+                <th>{{header}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+
+    <tbody>
+        <form method="post" action="/add">
+        {% for row in presetData %}
+            <tr>
+                <td><input type="checkbox" value="{{row.id}}" name="presets"/></td>
+                <td>{{row['Name']}}</td>
+                <td>{{row['Link']}}</td>
+            </tr>
+        {% endfor %}
+        <button name="custom" class="btn btn-dark" type="submit" value="custom" onclick="">Add</button>
+        </form>
+    </tbody>
+</table>
+</div>
+{% endblock %}

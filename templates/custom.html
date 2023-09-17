@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title%}Enter Custom Dork{% endblock %}
+{% block content %}
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name"
+               placeholder="Link name"
+               value="{{ request.form['name'] }}"></input>
+        <br>
+    
+        <label for="link">Link:</label>
+        <br>
+        <input type="text" name="link"
+               placeholder="Dorking Link"
+               value="{{ request.form['link'] }}"></input>
+        <br>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+{% endblock %}
