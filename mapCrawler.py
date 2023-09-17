@@ -3,41 +3,25 @@ import re
 import ipwhois
 import pprint
 import socket
+import plotly.express as px
+import pandas as pd
+import numpy as np
+from geopy.geocoders import Nominatim
 
 # method to crawl google dork search and create list of resulting affected websites
 def dorkSearch(google_dork_search_query):
+    dork_search_page = requests.get(google_dork_search_query)
+
+    URL_PATTERN = r'/url\?q=([^&]+)&amp;'
+    urls = re.findall(URL_PATTERN, str(dork_search_page.content))
+
     results = []
-    try:
-        dork_search_page = requests.get(google_dork_search_query)
-    
-        URL_PATTERN = r'/url\?q=([^&]+)&amp;'
-        urls = re.findall(URL_PATTERN, str(dork_search_page.content))
+    for url in urls:
+        result_dictionary = {'Link': url}
+        results.append(result_dictionary)
 
-        for url in urls:
-            result_dictionary = {'Link': url}
-            results.append(result_dictionary)
-
-        del results[-1]
-        del results[-1]
-
-        for dict in results:
-            try:
-                domain_pattern = r"https?://(?:www\.)?([a-zA-Z0-9.-]+)"
-
-                match = re.match(domain_pattern, list(dict.values())[0])
-                if match:
-                    domain = match.group(1)
-                else:
-                    print("No match found for:", list(dict.values())[0])
-
-                ip = getIP(str(domain))
-                dict['IP'] = ip
-                whoIs(ip)
-                dict['Description'] = summarize("whoIs.txt")
-            except:
-                print("The IP address for " + domain + " could not be found.\n")
-    except:
-        return {'Name': "Invalid URL"}
+    del results[-1]
+    del results[-1]
     return results
 
 # method to get ip address of given url
@@ -89,12 +73,14 @@ def summarize(file_path):
 
         # Append the extracted information to the sentence string
         extracted_info_sentence = ""
+        country_codes = []
         if asn_match:
             extracted_info_sentence += f"ASN: {asn_match.group(1)} | "
         if asn_date_match:
             extracted_info_sentence += f"ASN Date: {asn_date_match.group(1)} | "
         if country_code_match:
             extracted_info_sentence += f"Country Code: {country_code_match.group(1)} | "
+            country_codes.append(country_code_match.group(1))
         if network_cidr_match:
             extracted_info_sentence += f"Network CIDR: {network_cidr_match.group(1)} | "
         if ip_version_match:
@@ -111,7 +97,73 @@ def summarize(file_path):
             formatted_address6 = formatted_address5.replace("  ", " ")
             extracted_info_sentence += f"Address: {formatted_address6}"
 
-        return extracted_info_sentence
+        return extracted_info_sentence, country_codes
 
     except Exception as e:
         return str(e)
+
+
+
+
+url = "https://www.google.com/search?q=intitle%3A%22index+of%22+%22pass.txt%22#ip=1"
+results = dorkSearch(url)
+mapList = []
+
+print(results)
+for dict in results:
+    try:
+        domain_pattern = r"https?://(?:www\.)?([a-zA-Z0-9.-]+)"
+
+        match = re.match(domain_pattern, list(dict.values())[0])
+        if match:
+            domain = match.group(1)
+        else:
+            print("No match found for:", list(dict.values())[0])
+
+        ip = getIP(str(domain))
+        whoIs(ip)
+
+        print(domain)
+        print(socket.gethostbyname(domain))
+        print(summarize("whoIs.txt")[0] + "\n")
+
+        mapList.append(summarize("whoIs.txt")[1])
+    except:
+        print("The IP address for " + domain + " could not be found.\n")
+
+def get_country_coordinates(country_name):
+    try:
+        location = geolocator.geocode(country_name)
+        if location:
+            return location.latitude, location.longitude
+        else:
+            return None
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        return None
+
+mapList = [r[0] for r in mapList]
+
+lat = []
+lon = []
+pop = []
+geolocator = Nominatim(user_agent="get_country_coordinates")
+for country in mapList:
+    try:
+        lat.append(get_country_coordinates(country)[0])
+        lon.append(get_country_coordinates(country)[1])
+        pop.append(mapList.count(country))
+    except:
+        print("Latitude, longitude not valid")
+
+colors = []
+for i in range(len(mapList)):
+    colors.append("Vulnerable Server Locations")
+
+data = np.array([mapList, lat, lon, colors, pop]).T
+df = pd.DataFrame(data, columns=['Map', 'Lat', 'Lon', 'Colors', 'Pop'])
+df['Lat'] = df['Lat'].astype(float)
+df['Lon'] = df['Lon'].astype(float)
+df['Pop'] = df['Pop'].astype(float)
+fig = px.scatter_geo(df, lat='Lat', lon='Lon', color="Colors", color_discrete_map={'Vulnerable Server Locations': 'red'}, title='Map of Vulnerable Servers Around the World', size="Pop")
+fig.show()
