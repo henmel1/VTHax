@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
-from crawler import dorkSearch
+from crawler import dorkSearch, map_gen
+import crawler
 import subprocess
 import csv
 from datetime import datetime
@@ -120,11 +121,11 @@ def save():
 @app.route('/map', methods=('GET', 'POST'))
 def map():
     if request.method == 'POST':
-        try:
+        #try:
         # Run the mapCrawler.py script using subprocess
-            subprocess.run(['python', 'mapCrawler.py'], check=True)
-        except:
-            print("ERROR: Subprocess failure")
+        map_gen()
+        #except:
+        #    print("ERROR: Subprocess failure")
     return redirect(
         '/results'
     )

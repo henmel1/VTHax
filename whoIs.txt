@@ -1,400 +1,149 @@
-{'asn': '224',
- 'asn_cidr': '158.36.0.0/14',
- 'asn_country_code': 'NO',
- 'asn_date': '1992-02-07',
- 'asn_description': 'UNINETT UNINETT, The Norwegian University & Research '
-                    'Network, NO',
- 'asn_registry': 'ripencc',
- 'entities': ['HE15',
-              'JG155-RIPE',
-              'ORG-UA17-RIPE',
-              'UN49-RIPE',
-              'UNINETT-MNT',
-              'VF3500-RIPE',
-              'UAH5-RIPE'],
- 'network': {'cidr': '158.37.0.0/16',
-             'country': 'NO',
-             'end_address': '158.37.255.255',
-             'events': [{'action': 'registration',
+{'asn': '9595',
+ 'asn_cidr': '61.45.0.0/17',
+ 'asn_country_code': 'JP',
+ 'asn_date': '2003-09-02',
+ 'asn_description': 'XEPHION NTT-ME Corporation, JP',
+ 'asn_registry': 'apnic',
+ 'entities': ['IRT-JPNIC-JP', 'JNIC1-AP', 'JP00016904'],
+ 'network': {'cidr': '61.45.36.0/22',
+             'country': 'JP',
+             'end_address': '61.45.39.255',
+             'events': [{'action': 'last changed',
                          'actor': None,
-                         'timestamp': '2002-09-23T19:01:41Z'},
-                        {'action': 'last changed',
-                         'actor': None,
-                         'timestamp': '2023-05-05T15:33:14Z'}],
-             'handle': '158.37.0.0 - 158.37.255.255',
+                         'timestamp': '2006-07-07T01:02:10Z'}],
+             'handle': '61.45.36.0 - 61.45.39.255',
              'ip_version': 'v4',
-             'links': ['https://rdap.db.ripe.net/ip/158.37.63.56',
-                       'http://www.ripe.net/data-tools/support/documentation/terms'],
-             'name': 'UNINETT2',
-             'notices': [{'description': 'This output has been filtered.',
-                          'links': None,
-                          'title': 'Filtered'},
-                         {'description': 'If you see inaccuracies in the '
-                                         'results, please visit:',
-                          'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                          'title': 'Whois Inaccuracy Reporting'},
-                         {'description': 'Objects returned came from source\n'
-                                         'RIPE',
+             'links': ['https://jpnic.rdap.apnic.net/ip/61.45.36.0/22',
+                       'https://netox.apnic.net/search/61.45.36.0%2F22?utm_source=rdap&utm_medium=result&utm_campaign=rdap_result'],
+             'name': 'XEPHION',
+             'notices': [{'description': 'Objects returned came from source\n'
+                                         'JPNIC',
                           'links': None,
                           'title': 'Source'},
-                         {'description': 'This is the RIPE Database query '
-                                         'service. The objects are in RDAP '
-                                         'format.',
-                          'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                          'title': 'Terms and Conditions'}],
-             'parent_handle': '0.0.0.0 - 255.255.255.255',
+                         {'description': 'This is the APNIC WHOIS Database '
+                                         'query service. The objects are in '
+                                         'RDAP format.\n'
+                                         'This information has been partially '
+                                         'mirrored by APNIC from JPNIC. To '
+                                         'obtain more specific information, '
+                                         'please use the JPNIC WHOIS Gateway '
+                                         'at '
+                                         'http://www.nic.ad.jp/en/db/whois/en-gateway.html '
+                                         'or whois.nic.ad.jp for WHOIS client. '
+                                         '(The WHOIS client defaults to '
+                                         'Japanese output, use the /e switch '
+                                         'for English output)',
+                          'links': ['http://www.apnic.net/db/dbcopyright.html'],
+                          'title': 'Terms and Conditions'},
+                         {'description': 'If you see inaccuracies in the '
+                                         'results, please visit: ',
+                          'links': ['https://www.apnic.net/manage-ip/using-whois/abuse-and-spamming/invalid-contact-form'],
+                          'title': 'Whois Inaccuracy Reporting'}],
+             'parent_handle': None,
              'raw': None,
-             'remarks': [{'description': 'Academic and research institutions,\n'
-                                         'mostly UNINETT west Norway',
+             'remarks': [{'description': 'XePhion(NTT-ME Corporation)',
                           'links': None,
-                          'title': None}],
-             'start_address': '158.37.0.0',
+                          'title': 'description'}],
+             'start_address': '61.45.36.0',
              'status': ['active'],
-             'type': 'LEGACY'},
- 'nir': None,
- 'objects': {'HE15': {'contact': {'address': [{'type': None,
-                                               'value': 'Sikt - Norwegian '
-                                                        'Agency for Shared '
-                                                        'Services in Education '
-                                                        'and Research\n'
-                                                        '5782 Torgarden\n'
-                                                        'N-7437 Trondheim\n'
-                                                        'Norway'}],
-                                  'email': [{'type': 'email',
-                                             'value': 'he@uninett.no'}],
-                                  'kind': 'individual',
-                                  'name': 'Havard Eidnes',
-                                  'phone': [{'type': 'voice',
-                                             'value': '+47 73 55 79 35'},
-                                            {'type': 'fax',
-                                             'value': '+47 73 55 79 01'}],
-                                  'role': None,
-                                  'title': None},
-                      'entities': ['ORG-UA17-RIPE', 'UNINETT-MNT'],
-                      'events': [{'action': 'registration',
-                                  'actor': None,
-                                  'timestamp': '2001-12-12T17:02:07Z'},
-                                 {'action': 'last changed',
-                                  'actor': None,
-                                  'timestamp': '2023-05-02T16:51:01Z'}],
-                      'events_actor': None,
-                      'handle': 'HE15',
-                      'links': ['https://rdap.db.ripe.net/entity/HE15',
-                                'http://www.ripe.net/data-tools/support/documentation/terms'],
-                      'notices': [{'description': 'This output has been '
-                                                  'filtered.',
-                                   'links': None,
-                                   'title': 'Filtered'},
-                                  {'description': 'If you see inaccuracies in '
-                                                  'the results, please visit:',
-                                   'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                   'title': 'Whois Inaccuracy Reporting'},
-                                  {'description': 'Objects returned came from '
-                                                  'source\n'
-                                                  'RIPE',
-                                   'links': None,
-                                   'title': 'Source'},
-                                  {'description': 'This is the RIPE Database '
-                                                  'query service. The objects '
-                                                  'are in RDAP format.',
-                                   'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                   'title': 'Terms and Conditions'}],
-                      'raw': None,
-                      'remarks': None,
-                      'roles': None,
-                      'status': None},
-             'JG155-RIPE': {'contact': {'address': [{'type': None,
-                                                     'value': 'UNINETT NORID '
-                                                              'AS\n'
-                                                              'Postboks 4769 '
-                                                              'Sluppen\n'
-                                                              'NO-7465 '
-                                                              'Trondheim\n'
-                                                              'Norway'}],
-                                        'email': [{'type': 'email',
-                                                   'value': 'jarle.greipsland@uninett.no'}],
-                                        'kind': 'individual',
-                                        'name': 'Jarle Greipsland',
-                                        'phone': [{'type': 'voice',
-                                                   'value': '+47 73 55 79 36'},
-                                                  {'type': 'fax',
-                                                   'value': '+47 73 55 80 01'}],
-                                        'role': None,
-                                        'title': None},
-                            'entities': ['UNINETT-MNT'],
-                            'events': [{'action': 'registration',
-                                        'actor': None,
-                                        'timestamp': '2002-09-23T18:46:18Z'},
-                                       {'action': 'last changed',
-                                        'actor': None,
-                                        'timestamp': '2015-05-04T12:35:32Z'}],
-                            'events_actor': None,
-                            'handle': 'JG155-RIPE',
-                            'links': ['https://rdap.db.ripe.net/entity/JG155-RIPE',
-                                      'http://www.ripe.net/data-tools/support/documentation/terms'],
-                            'notices': [{'description': 'This output has been '
-                                                        'filtered.',
-                                         'links': None,
-                                         'title': 'Filtered'},
-                                        {'description': 'If you see '
-                                                        'inaccuracies in the '
-                                                        'results, please '
-                                                        'visit:',
-                                         'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                         'title': 'Whois Inaccuracy Reporting'},
-                                        {'description': 'Objects returned came '
-                                                        'from source\n'
-                                                        'RIPE',
-                                         'links': None,
-                                         'title': 'Source'},
-                                        {'description': 'This is the RIPE '
-                                                        'Database query '
-                                                        'service. The objects '
-                                                        'are in RDAP format.',
-                                         'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                         'title': 'Terms and Conditions'}],
-                            'raw': None,
-                            'remarks': None,
-                            'roles': None,
-                            'status': None},
-             'ORG-UA17-RIPE': {'contact': {'address': [{'type': None,
-                                                        'value': 'Kastruplundgade '
-                                                                 '22,1\n'
-                                                                 '2770\n'
-                                                                 'Kastrup\n'
-                                                                 'DENMARK'}],
-                                           'email': [{'type': 'email',
-                                                      'value': 'he@uninett.no'}],
-                                           'kind': 'org',
-                                           'name': 'SIKT - KUNNSKAPSSEKTORENS '
-                                                   'TJENESTELEVERANDOR',
-                                           'phone': [{'type': 'voice',
-                                                      'value': '+4773557935'},
-                                                     {'type': 'fax',
-                                                      'value': '+4773557901'}],
-                                           'role': None,
-                                           'title': None},
-                               'entities': ['HE15',
-                                            'HK1847-RIPE',
-                                            'JG155-RIPE',
-                                            'MB40-RIPE',
-                                            'RIPE-NCC-HM-MNT',
-                                            'UNINETT-MNT'],
-                               'events': [{'action': 'registration',
-                                           'actor': None,
-                                           'timestamp': '2004-04-17T11:46:12Z'},
-                                          {'action': 'last changed',
-                                           'actor': None,
-                                           'timestamp': '2022-10-19T07:07:34Z'}],
-                               'events_actor': None,
-                               'handle': 'ORG-UA17-RIPE',
-                               'links': ['https://rdap.db.ripe.net/entity/ORG-UA17-RIPE',
-                                         'http://www.ripe.net/data-tools/support/documentation/terms'],
-                               'notices': [{'description': 'This output has '
-                                                           'been filtered.',
-                                            'links': None,
-                                            'title': 'Filtered'},
-                                           {'description': 'If you see '
-                                                           'inaccuracies in '
-                                                           'the results, '
-                                                           'please visit:',
-                                            'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                            'title': 'Whois Inaccuracy '
-                                                     'Reporting'},
-                                           {'description': 'Objects returned '
-                                                           'came from source\n'
-                                                           'RIPE',
-                                            'links': None,
-                                            'title': 'Source'},
-                                           {'description': 'This is the RIPE '
-                                                           'Database query '
-                                                           'service. The '
-                                                           'objects are in '
-                                                           'RDAP format.',
-                                            'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                            'title': 'Terms and Conditions'}],
-                               'raw': None,
-                               'remarks': None,
-                               'roles': ['registrant'],
-                               'status': None},
-             'UAH5-RIPE': {'contact': {'address': [{'type': None,
-                                                    'value': 'UNINETT AS\n'
-                                                             'NO-7465 '
-                                                             'Trondheim\n'
-                                                             'Norway'}],
-                                       'email': [{'type': 'email',
-                                                  'value': 'abuse@uninett.no'},
-                                                 {'type': 'abuse',
-                                                  'value': 'abuse@uninett.no'}],
-                                       'kind': 'group',
-                                       'name': 'UNINETT Abuse handling',
-                                       'phone': None,
-                                       'role': None,
-                                       'title': None},
-                           'entities': ['UNINETT-MNT'],
-                           'events': None,
-                           'events_actor': None,
-                           'handle': 'UAH5-RIPE',
-                           'links': None,
-                           'notices': None,
-                           'raw': None,
-                           'remarks': None,
-                           'roles': ['abuse'],
-                           'status': None},
-             'UN49-RIPE': {'contact': {'address': [{'type': None,
-                                                    'value': 'UNINETT\n'
-                                                             'N-7465 '
-                                                             'Trondheim\n'
-                                                             'Norway'}],
-                                       'email': [{'type': 'email',
-                                                  'value': 'drift@uninett.no'}],
-                                       'kind': 'group',
-                                       'name': 'UNINETT NOC',
-                                       'phone': [{'type': 'voice',
-                                                  'value': '+47 73 55 79 60'},
-                                                 {'type': 'voice',
-                                                  'value': '+47 73 55 79 61'},
-                                                 {'type': 'fax',
-                                                  'value': '+47 73 55 79 01'}],
-                                       'role': None,
-                                       'title': None},
-                           'entities': ['HE15', 'HK1847-RIPE', 'UNINETT-MNT'],
-                           'events': [{'action': 'registration',
-                                       'actor': None,
-                                       'timestamp': '2002-05-22T10:51:29Z'},
-                                      {'action': 'last changed',
-                                       'actor': None,
-                                       'timestamp': '2013-03-11T14:05:45Z'}],
-                           'events_actor': None,
-                           'handle': 'UN49-RIPE',
-                           'links': ['https://rdap.db.ripe.net/entity/UN49-RIPE',
-                                     'http://www.ripe.net/data-tools/support/documentation/terms'],
-                           'notices': [{'description': 'This output has been '
-                                                       'filtered.',
-                                        'links': None,
-                                        'title': 'Filtered'},
-                                       {'description': 'If you see '
-                                                       'inaccuracies in the '
-                                                       'results, please visit:',
-                                        'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                        'title': 'Whois Inaccuracy Reporting'},
-                                       {'description': 'Objects returned came '
-                                                       'from source\n'
-                                                       'RIPE',
-                                        'links': None,
-                                        'title': 'Source'},
-                                       {'description': 'This is the RIPE '
-                                                       'Database query '
-                                                       'service. The objects '
-                                                       'are in RDAP format.',
-                                        'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                        'title': 'Terms and Conditions'}],
-                           'raw': None,
-                           'remarks': None,
-                           'roles': None,
-                           'status': None},
-             'UNINETT-MNT': {'contact': {'address': None,
-                                         'email': None,
-                                         'kind': 'individual',
-                                         'name': 'UNINETT-MNT',
-                                         'phone': None,
-                                         'role': None,
-                                         'title': None},
-                             'entities': ['HE15',
-                                          'HK1847-RIPE',
-                                          'JG155-RIPE',
-                                          'UNINETT-MNT',
-                                          'VF3500-RIPE'],
-                             'events': [{'action': 'registration',
-                                         'actor': None,
-                                         'timestamp': '2001-12-11T21:16:22Z'},
-                                        {'action': 'last changed',
-                                         'actor': None,
-                                         'timestamp': '2020-06-03T10:05:20Z'}],
-                             'events_actor': None,
-                             'handle': 'UNINETT-MNT',
-                             'links': ['https://rdap.db.ripe.net/entity/UNINETT-MNT',
-                                       'http://www.ripe.net/data-tools/support/documentation/terms'],
-                             'notices': [{'description': 'This output has been '
-                                                         'filtered.',
-                                          'links': None,
-                                          'title': 'Filtered'},
-                                         {'description': 'If you see '
-                                                         'inaccuracies in the '
-                                                         'results, please '
-                                                         'visit:',
-                                          'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                          'title': 'Whois Inaccuracy '
-                                                   'Reporting'},
-                                         {'description': 'Objects returned '
-                                                         'came from source\n'
-                                                         'RIPE',
-                                          'links': None,
-                                          'title': 'Source'},
-                                         {'description': 'This is the RIPE '
-                                                         'Database query '
-                                                         'service. The objects '
-                                                         'are in RDAP format.',
-                                          'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                          'title': 'Terms and Conditions'}],
-                             'raw': None,
-                             'remarks': [{'description': 'UNINETT maintainer',
-                                          'links': None,
-                                          'title': None}],
-                             'roles': ['registrant'],
-                             'status': None},
-             'VF3500-RIPE': {'contact': {'address': [{'type': None,
-                                                      'value': 'UNINETT AS\n'
-                                                               'N-7465 '
-                                                               'Trondheim\n'
-                                                               'Norway'}],
-                                         'email': [{'type': 'email',
-                                                    'value': 'Vidar.Faltinsen@uninett.no'}],
-                                         'kind': 'individual',
-                                         'name': 'Vidar Faltinsen',
-                                         'phone': [{'type': 'voice',
-                                                    'value': '+47 411 26 197'},
-                                                   {'type': 'fax',
-                                                    'value': '+47 73 55 79 '
-                                                             '01'}],
-                                         'role': None,
-                                         'title': None},
-                             'entities': ['ORG-UA17-RIPE', 'UNINETT-MNT'],
-                             'events': [{'action': 'registration',
-                                         'actor': None,
-                                         'timestamp': '2018-04-18T14:06:52Z'},
-                                        {'action': 'last changed',
-                                         'actor': None,
-                                         'timestamp': '2018-04-18T14:06:52Z'}],
-                             'events_actor': None,
-                             'handle': 'VF3500-RIPE',
-                             'links': ['https://rdap.db.ripe.net/entity/VF3500-RIPE',
-                                       'http://www.ripe.net/data-tools/support/documentation/terms'],
-                             'notices': [{'description': 'This output has been '
-                                                         'filtered.',
-                                          'links': None,
-                                          'title': 'Filtered'},
-                                         {'description': 'If you see '
-                                                         'inaccuracies in the '
-                                                         'results, please '
-                                                         'visit:',
-                                          'links': ['https://www.ripe.net/contact-form?topic=ripe_dbm&show_form=true'],
-                                          'title': 'Whois Inaccuracy '
-                                                   'Reporting'},
-                                         {'description': 'Objects returned '
-                                                         'came from source\n'
-                                                         'RIPE',
-                                          'links': None,
-                                          'title': 'Source'},
-                                         {'description': 'This is the RIPE '
-                                                         'Database query '
-                                                         'service. The objects '
-                                                         'are in RDAP format.',
-                                          'links': ['http://www.ripe.net/db/support/db-terms-conditions.pdf'],
-                                          'title': 'Terms and Conditions'}],
-                             'raw': None,
-                             'remarks': None,
-                             'roles': ['administrative'],
-                             'status': None}},
- 'query': '158.37.63.56',
+             'type': None},
+ 'nir': {'nets': [{'address': None,
+                   'cidr': '61.45.36.0/22',
+                   'contacts': {'admin': {'division': 'Network Business '
+                                                      'Headquarters ISP '
+                                                      'Promotion Department',
+                                          'email': 'admin@xephion.ad.jp',
+                                          'fax': '',
+                                          'organization': 'NTT-ME Corporation',
+                                          'phone': '03-5217-9191',
+                                          'updated': '2020-04-08T05:38:03'},
+                                'tech': {'division': 'Network Business '
+                                                     'Headquarters ISP '
+                                                     'Promotion Department',
+                                         'email': 'admin@xephion.ad.jp',
+                                         'fax': '',
+                                         'organization': 'NTT-ME Corporation',
+                                         'phone': '03-5217-9191',
+                                         'updated': '2020-04-08T05:38:03'}},
+                   'country': 'JP',
+                   'created': '2005-07-26T00:00:00',
+                   'handle': 'XEPHION',
+                   'name': 'XePhion(NTT-ME Corporation)',
+                   'nameservers': ['ns1.xephion.ne.jp',
+                                   'ns2.xephion.ne.jp',
+                                   'ns3.xephion.ne.jp',
+                                   'ns4.xephion.ne.jp'],
+                   'postal_code': None,
+                   'range': '61.45.36.1 - 61.45.39.255',
+                   'updated': '2006-07-06T07:02:10'}],
+         'query': '61.45.37.93',
+         'raw': None},
+ 'objects': {'IRT-JPNIC-JP': {'contact': {'address': [{'type': None,
+                                                       'value': 'Uchikanda OS '
+                                                                'Bldg 4F, '
+                                                                '2-12-6 '
+                                                                'Uchi-Kanda\n'
+                                                                'Chiyoda-ku, '
+                                                                'Tokyo '
+                                                                '101-0047, '
+                                                                'Japan'}],
+                                          'email': [{'type': None,
+                                                     'value': 'hostmaster@nic.ad.jp'},
+                                                    {'type': None,
+                                                     'value': 'hostmaster@nic.ad.jp'}],
+                                          'kind': 'group',
+                                          'name': 'IRT-JPNIC-JP',
+                                          'phone': [{'type': 'voice',
+                                                     'value': '+81-3-5297-2311'},
+                                                    {'type': 'fax',
+                                                     'value': '+81-3-5297-2312'}],
+                                          'role': None,
+                                          'title': None},
+                              'entities': None,
+                              'events': [{'action': 'last changed',
+                                          'actor': None,
+                                          'timestamp': '2022-06-14T04:26:58Z'}],
+                              'events_actor': None,
+                              'handle': 'IRT-JPNIC-JP',
+                              'links': ['https://jpnic.rdap.apnic.net/entity/IRT-JPNIC-JP'],
+                              'notices': None,
+                              'raw': None,
+                              'remarks': [{'description': 'hostmaster@nic.ad.jp '
+                                                          'was validated on '
+                                                          '2020-07-23',
+                                           'links': None,
+                                           'title': 'remarks'}],
+                              'roles': ['abuse'],
+                              'status': None},
+             'JNIC1-AP': {'contact': {'address': [{'type': None,
+                                                   'value': 'Uchikanda OS Bldg '
+                                                            '4F, 2-12-6 '
+                                                            'Uchi-Kanda\n'
+                                                            'Chiyoda-ku, Tokyo '
+                                                            '101-0047, Japan'}],
+                                      'email': [{'type': None,
+                                                 'value': 'hostmaster@nic.ad.jp'}],
+                                      'kind': 'group',
+                                      'name': 'Japan Network Information '
+                                              'Center',
+                                      'phone': [{'type': 'voice',
+                                                 'value': '+81-3-5297-2311'},
+                                                {'type': 'fax',
+                                                 'value': '+81-3-5297-2312'}],
+                                      'role': None,
+                                      'title': None},
+                          'entities': None,
+                          'events': [{'action': 'last changed',
+                                      'actor': None,
+                                      'timestamp': '2022-01-05T03:04:02Z'}],
+                          'events_actor': None,
+                          'handle': 'JNIC1-AP',
+                          'links': ['https://jpnic.rdap.apnic.net/entity/JNIC1-AP'],
+                          'notices': None,
+                          'raw': None,
+                          'remarks': None,
+                          'roles': ['administrative', 'technical'],
+                          'status': None},
+             'JP00016904': {}},
+ 'query': '61.45.37.93',
  'raw': None}
