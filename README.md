@@ -1,4 +1,4 @@
-# VTHax
+# VTHax - Miru
 
 Please run app.py and click the link that appears in the terminal to open the website locally.
 
